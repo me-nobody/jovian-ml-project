@@ -134,6 +134,7 @@ test_text.zip
 training_text.zip
 test_variants.zip
 training_variants.zip
+*.csv
 
 # reference files
 *.pdf
