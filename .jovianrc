@@ -1,3 +1,7 @@
 {
-  "notebooks": {}
+  "notebooks": {
+    "jovian-ml-project-rough.ipynb": {
+      "slug": "ef9b9da6142f4260b2c09d35dcaaa9c3"
+    }
+  }
 }
