@@ -2,6 +2,12 @@
   "notebooks": {
     "jovian-ml-project-rough.ipynb": {
       "slug": "ef9b9da6142f4260b2c09d35dcaaa9c3"
+    },
+    "jovian-ml-project.ipynb": {
+      "slug": "3060a8845b7242cf8e9e11113a06bc72"
+    },
+    "jovian-ml-project-301221.ipynb": {
+      "slug": "3060a8845b7242cf8e9e11113a06bc72"
     }
   }
 }
