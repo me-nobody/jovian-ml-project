@@ -136,6 +136,8 @@ test_variants.zip
 training_variants.zip
 cased_L-12_H-768_A-12.zip
 *.csv
+*.zip
+
 
 # reference files
 *.pdf
