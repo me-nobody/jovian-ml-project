@@ -129,7 +129,7 @@ dmypy.json
 .pyre/
 
 # data files
-
+*.txt
 test_text.zip
 training_text.zip
 test_variants.zip
