@@ -1,0 +1,23 @@
+# download genome format file from UCSC
+https://genome.ucsc.edu/FAQ/FAQformat.html
+# download genome file from UCSC Table browser
+# proceed to the server below
+http://genome.ucsc.edu/cgi-bin/hgGateway
+# next to blue ribbon titled Human Genome Browser hg19 -> click on view sequences
+# the downloaded files have the length of the chromosomes
+http://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/hg19.chrom.sizes
+
+# use bedtools to create 1 MB binned chromosomes using -w option
+# load bedtools
+module load BEDTools/2.25.0-foss-2018b
+
+# binning genome to pre-made bins
+# the files have to be in tab format
+bedtools makewindows -g chrom_genome -w 1000000 > bin
+
+
+# binned_genome.bed is the pre-made bin by bedtools makewindows
+# scc152_narrow.tab is the ChIP peak file
+# -c parameter actually creates the bins
+
+bedtools intersect -wa -wb -a binned_genome.bed -b scc152_narrow.tab -c
